@@ -1,6 +1,6 @@
 ﻿namespace DragonFlyERP
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnTeste = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnTeste
+            // 
+            this.btnTeste.Location = new System.Drawing.Point(361, 189);
+            this.btnTeste.Name = "btnTeste";
+            this.btnTeste.Size = new System.Drawing.Size(75, 23);
+            this.btnTeste.TabIndex = 0;
+            this.btnTeste.Text = "TESTE";
+            this.btnTeste.UseVisualStyleBackColor = true;
+            this.btnTeste.Click += new System.EventHandler(this.btnTeste_Click);
+            // 
+            // frmLogin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.btnTeste);
+            this.Name = "frmLogin";
+            this.Text = "LOGIN";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Button btnTeste;
     }
 }
